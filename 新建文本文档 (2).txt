@@ -1,0 +1,4 @@
+前端:微信小程序开发工具
+后端服务器:nodejs+express框架;
+数据库:mongoDB;
+服务器反向代理:nginx;

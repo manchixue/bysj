@@ -1,0 +1,55 @@
+/* pages/fenlei/fenlei.wxss */
+.page{
+	display: flex;
+	flex-direction: row
+}
+.left{
+	flex:1;
+	height:100%;
+	border-right: 2rpx solid #ccc;
+}
+.list{
+	width: 100%;
+	height: 80rpx;
+	text-align: center;
+	line-height: 80rpx;
+	font-size: 28rpx;
+	color: #666;
+	transition: all .3s;
+}
+.cur{
+	color: #fb7d34;
+	font-size: 40rpx;
+}
+.right{
+	flex:4
+}
+.right .head{
+	/* width: 100%; */
+	padding: 5%;
+	border-bottom: 1rpx solid #ccc;
+}
+.right .head image{
+	width:100%;
+	height:240rpx;
+	transition: all .3s;
+}
+.right .content{
+	padding: 5%;
+}
+.right .content navigator{
+	display: inline-block;
+	width:33%;
+	height:150rpx;
+	text-align: center;
+	/* flex-wrap: wrap; */
+}
+.right .content navigator image{
+	width:100%;
+	height:100%;
+}
+.right .content navigator text{
+	font-size: 24rpx;
+	
+	color:#666;
+}

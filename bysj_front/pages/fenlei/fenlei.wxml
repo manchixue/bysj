@@ -1,0 +1,19 @@
+<!--pages/fenlei/fenlei.wxml-->
+<view class='page'>
+		<scroll-view class='left' scroll-y='true'>
+		<block wx:for='{{category}}'>
+			<view id='{{index}}' class='{{oid==index? "list cur":"list"}}' bindtap='chooseList'>{{item}}</view>	
+		</block>
+	</scroll-view>
+	<view class='right'>
+		<view class='head'><image src='../../static/images/{{imgs[oid]?imgs[oid]:imgs[0]}}'></image></view>
+		<view class='content'>
+			<block wx:for='{{content}}'>
+				<navigator url='../item/item?goodsId={{item.goodsId}}'>
+					<image src='../../static/images/{{item.src}}'></image>
+					<text>{{item.name}}</text>
+				</navigator>
+		</block>
+		</view>
+	</view>
+</view>

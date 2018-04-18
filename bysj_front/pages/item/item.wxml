@@ -1,0 +1,54 @@
+<!--pages/item/item.wxml-->
+<view class='view-body'>
+<!--轮播图  -->
+	<view >
+		<swiper class='swiper' indicator-dots circular indicator-active-color='white' indicator-color="rgba(255,255,255,0.2)"
+  autoplay="autoplay" interval='3000'>
+  <block wx:for="{{dataArr.picArr}}">
+    <swiper-item>
+      <image src="../../static/images/{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+	</view>
+<!--商品介绍  -->
+	<view class='section1'>
+		<view class='section1-text1'>{{dataArr.topic}}</view>
+		<view class='section1-text2'><text>{{dataArr.description}}</text></view>
+		<view class='section1-text3'>{{dataArr.price}}元</view>
+	</view>
+	<!--用户评论  -->
+	<view class='section-user'>
+		<view class='user'>
+			<text>用户评价({{dataArr.user.length}}条)</text>
+			<navigator url='../comment/comment?goodsId={{dataArr.goodsId}}'>
+				<text>查看全部评价</text>
+			</navigator>
+		</view>
+		<view class='content'>
+			<text class='content-user'>{{dataArr.user[0].name}}</text>
+			<text class='content-inner'>{{dataArr.user[0].content}}</text>
+		</view>
+	</view>
+<!--商品详情  -->
+	<view class='section2'>
+		<block wx:for="{{dataArr.detail}}" wx:key='{{key}}'>
+			<view>
+				<image src='../../static/images/{{item}}'></image>
+			</view>
+		</block>
+	</view>
+
+
+	<view class='view-car'>
+			<view class='view-car-left' bindtap='clickToCar'>
+			<image src='../../static/images/zw_iconb4.png'></image>
+			</view>
+		<view class='view-car-center'>
+			<text class='view-car-text' bindtap="addToCar">加入购物车</text>
+		</view>
+		<view class='view-car-right'>
+			<text class='view-car-text'>立即购买</text>
+		</view>
+	</view>
+</view>

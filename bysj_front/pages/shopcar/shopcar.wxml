@@ -1,0 +1,41 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class='view-body'>
+
+
+	<view class='container'>
+
+		<checkbox-group bindchange='selectedItemGoods'>
+			<block wx:for='{{cars}}'>
+				<view class='view-car-item'>
+					<view class='view-car-item1'>
+						<checkbox value='{{index}}' checked='{{item.checked}}'></checkbox>
+						<image src='../../static/images/shopping.png'></image>
+					</view>
+					<view class='view-car-item2'>
+							<text>{{item.name}}</text>
+					</view>
+					<view class='view-car-item3'>
+						<text>{{item.numbers}} ×</text>
+						<text>{{item.price}}元</text>
+					</view>
+				</view>
+			</block>
+		</checkbox-group>
+
+	</view>
+	<view class='balance'>
+		<view class='balance-item1'>
+			<checkbox-group bindchange='selectedAllGoods'>
+				<checkbox value='全选' checked class='checked-box'>全选</checkbox>
+			</checkbox-group>
+		</view>
+		<view class='balance-item2'>
+			<text>合 计: </text>
+			<text>{{money}}元</text>
+		</view>
+		<view class='balance-item3'>
+			<text>结算({{cars.length}})</text>
+		</view>
+	</view>
+
+</view>

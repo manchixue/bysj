@@ -1,0 +1,7 @@
+<!--pages/comment/comment.wxml-->
+<view class='view-body'>
+	<block wx:for='{{dataArr.user}}'>
+		<view class='name'>{{item.name}}</view>
+		<view class='content'>{{item.content}}</view>
+	</block>
+</view>
