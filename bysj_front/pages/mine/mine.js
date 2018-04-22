@@ -5,14 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+		userInfo:[],
+		arr:[
+			{ 'pic': 'inner1.png', 'content': '会员中心'},
+			{ 'pic': 'inner2.png', 'content': '我的优惠' },
+			{ 'pic': 'inner3.png', 'content': '服务中心' },
+			{ 'pic': 'inner4.png', 'content': '小米之家' },
+			{ 'pic': 'inner5.png', 'content': 'F码通道' },
+			{ 'pic': 'inner6.png', 'content': '设置' },
+		]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+		let self = this;
+		wx:wx.getUserInfo({
+			withCredentials: true,
+			lang: '',
+			success: function(res) {
+				console.log(res.userInfo);
+				self.setData({
+					userInfo: res.userInfo
+				})
+			},
+			fail: function(res) {},
+			complete: function(res) {},
+		})
   },
 
   /**

@@ -47,8 +47,5 @@
 		<view class='view-car-center'>
 			<text class='view-car-text' bindtap="addToCar">加入购物车</text>
 		</view>
-		<view class='view-car-right'>
-			<text class='view-car-text'>立即购买</text>
-		</view>
 	</view>
 </view>

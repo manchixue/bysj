@@ -24,7 +24,7 @@
 	height:110rpx
 }
 .view-car-center{
-	flex:2;
+	flex:3;
 	background: #FF6802;
   display: flex;
   justify-content: center;

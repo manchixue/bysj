@@ -1,1 +1,43 @@
 /* pages/mine/mine.wxss */
+.head{
+	padding: 32rpx 20rpx;
+	background: url(https://m.mi.com/static/img/bg.63c8e19851.png) center 0 #f37d0f;
+	background-size: auto 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+.head image{
+	width: 100rpx;
+	height:100rpx;
+	border-radius: 50%;
+}
+.head text{
+	font-size: 30rpx;
+	color: #fff;
+	padding-left: 20rpx;
+	padding-top: 20rpx;
+}
+.content{
+	/* margin-top: 70rpx; */
+}
+.itemList{
+	width:100%;
+	margin: 20rpx 0;
+	padding: 20rpx 40rpx;
+	border: 1rpx solid #eee;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.itemList image{
+	width:50rpx;
+	height:50rpx;
+}
+.itemList text{
+	padding-left: 20rpx;
+	font-size: 30rpx;
+}

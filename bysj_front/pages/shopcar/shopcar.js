@@ -7,8 +7,24 @@ Page({
   data: {
 		cars:[],
 		money:0,
-		counts:0
+		counts:0,
+		x0:null,
+		x:null,
+		flag:false
   },
+	delete(e){
+		// this.
+		let self = this;
+		let index = e.target.dataset.index
+		this.data.cars.map(function(value,key){
+			if(value.id === index){
+				self.data.cars.splice(key,1);
+				self.setData(self.data);
+				// wx.removeStorageSync('cars')
+				wx.setStorageSync('cars', self.data.cars)
+			}
+		})
+	},
 	selectedAllGoods:function(e){
 		if (e.detail.value.length>0){
 			console.log('全选');

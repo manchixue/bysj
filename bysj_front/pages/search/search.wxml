@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+<view class='page'>
+	<view class='search-top'>
+		<input class='input' bindinput='setSearchContent' placeholder='搜索商品名称'></input>
+		<button class='toSearch' bindtap='toSearch'>搜索</button>
+	</view>
+	<view class='list'>
+		<block wx:for='{{list}}'>
+			<navigator url='../item/item?goodsId={{item.id}}'>
+				<text>{{item.topic}}</text>
+			</navigator>
+		</block>
+	</view>
+	
+</view>

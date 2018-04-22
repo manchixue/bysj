@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
-		"pages/fenlei/fenlei",		
+		"pages/shopcar/shopcar",
+		
+		"pages/index/index",
+    "pages/fenlei/fenlei",
     "pages/item/item",
     "pages/comment/comment",
-    "pages/shopcar/shopcar",
     "pages/mine/mine",
+		"pages/search/search",		
     "pages/category/category"
   ],
   "window": {
