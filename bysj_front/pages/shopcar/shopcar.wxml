@@ -3,8 +3,11 @@
 
 
 	<view class='container'>
+  <!--空购物车  -->
+    <view wx:hidden='{{isShow}}'>
 
-		<checkbox-group bindchange='selectedItemGoods'>
+    </view>
+		<checkbox-group bindchange='selectedItemGoods' wx:show = '{{isShow}}'>
 			<block wx:for='{{cars}}'>
 				<view class='view-car-item'>
 					<view class='view-car-item1'>

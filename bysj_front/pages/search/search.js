@@ -33,10 +33,10 @@ Page({
 			if(ctx == value.keyword){
 				console.log(arr[key]);
 				searchItem = arr[key];
+        console.log(searchItem.id)
 				wx.navigateTo({
 					url:'../item/item?goodsId='+searchItem.id
 				});
-				return;
 			}
 		})
 		
@@ -74,7 +74,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    
   },
 
   /**

@@ -49,7 +49,7 @@
 	font-size: 30rpx;
   width: 100%;
   height: 160rpx;
-  background: green;
+   background: #fff; 
   border-bottom: 1rpx solid #dddddd;
 	display: flex;
 	flex-direction: row;

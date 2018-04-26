@@ -1,10 +1,10 @@
 {
   "pages": [
-		"pages/shopcar/shopcar",
 		
 		"pages/index/index",
     "pages/fenlei/fenlei",
     "pages/item/item",
+		"pages/shopcar/shopcar",    
     "pages/comment/comment",
     "pages/mine/mine",
 		"pages/search/search",		

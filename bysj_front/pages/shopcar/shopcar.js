@@ -16,12 +16,16 @@ Page({
 		// this.
 		let self = this;
 		let index = e.target.dataset.index
+    console.log(e.target)
 		this.data.cars.map(function(value,key){
 			if(value.id === index){
 				self.data.cars.splice(key,1);
+        self.data.money-=value.price.substring(1)*1;
 				self.setData(self.data);
+
 				// wx.removeStorageSync('cars')
-				wx.setStorageSync('cars', self.data.cars)
+				wx.setStorageSync('cars', self.data.cars);
+
 			}
 		})
 	},
@@ -98,7 +102,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+   
   },
 
   /**
@@ -106,6 +110,7 @@ Page({
    */
   onReady: function () {
 		let cars = wx.getStorageSync('cars');
+    console.log(cars);
 		this.setData({
 			cars:cars
 		})
@@ -116,7 +121,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-		this.changeMoney();
+    this.changeMoney();
+    
+    let cars = wx.getStorageSync('cars');
+    if(!cars){
+      
+    }
+    console.log(cars);
+    this.setData({
+      cars: cars
+    })
   },
 
   /**

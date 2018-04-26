@@ -1,7 +1,7 @@
 <!--pages/search/search.wxml-->
 <view class='page'>
 	<view class='search-top'>
-		<input class='input' bindinput='setSearchContent' placeholder='搜索商品名称'></input>
+		<input class='input' bindconfirm='toSearch' bindinput='setSearchContent' placeholder='搜索商品名称'></input>
 		<button class='toSearch' bindtap='toSearch'>搜索</button>
 	</view>
 	<view class='list'>
