@@ -50,7 +50,10 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
       <pane id="Scope" />
       <pane id="Scratches" />
 >>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
@@ -103,7 +106,11 @@
       <updated>1523679751743</updated>
       <workItem from="1523679759389" duration="42000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1524499438376" duration="64000" />
+=======
+      <workItem from="1524674336174" duration="1216000" />
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
 =======
       <workItem from="1524674336174" duration="1216000" />
 >>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
@@ -112,7 +119,11 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="106000" />
+=======
+    <option name="totallyTimeSpent" value="1258000" />
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
 =======
     <option name="totallyTimeSpent" value="1258000" />
 >>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
@@ -120,6 +131,7 @@
   <component name="ToolWindowManager">
     <frame x="3" y="8" width="1223" height="999" extended-state="0" />
     <layout>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24894515" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -140,6 +152,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
 =======
+=======
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25365433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />

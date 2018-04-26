@@ -2,6 +2,7 @@
 <view class='view-body'>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	<view class='container'>
   <!--空购物车  -->
@@ -10,6 +11,8 @@
     </view>
 		<checkbox-group bindchange='selectedItemGoods' wx:show = '{{isShow}}'>
 =======
+=======
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
 	<view hidden='{{hasGoods}}' class='no-goods'>
 			<text>购物车暂无东西~</text>
 		</view>

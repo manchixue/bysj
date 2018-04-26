@@ -117,6 +117,7 @@ Page({
    */
   onReady: function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		let cars = wx.getStorageSync('cars');
     console.log(cars);
 		this.setData({
@@ -126,12 +127,16 @@ Page({
 =======
 		
 >>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
+=======
+		
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     this.changeMoney();
     
@@ -144,6 +149,8 @@ Page({
       cars: cars
     })
 =======
+=======
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
 		let cars = wx.getStorageSync('cars');
 		console.log(cars)
 		if(cars.length === 0){
@@ -159,6 +166,9 @@ Page({
 		})
 		console.log(this.data.hasGoods)
 		this.changeMoney()
+<<<<<<< HEAD
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
+=======
 >>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
   },
 
