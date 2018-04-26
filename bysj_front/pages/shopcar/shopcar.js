@@ -10,7 +10,8 @@ Page({
 		counts:0,
 		x0:null,
 		x:null,
-		flag:false
+		flag:false,
+		hasGoods:false
   },
 	delete(e){
 		// this.
@@ -28,6 +29,12 @@ Page({
 
 			}
 		})
+		if(this.data.cars.length === 0){
+			this.setData({
+				hasGoods:false
+			})
+		}
+		this.changeMoney();
 	},
 	selectedAllGoods:function(e){
 		if (e.detail.value.length>0){
@@ -109,18 +116,23 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+<<<<<<< HEAD
 		let cars = wx.getStorageSync('cars');
     console.log(cars);
 		this.setData({
 			cars:cars
 		})
 		this.changeMoney()
+=======
+		
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+<<<<<<< HEAD
     this.changeMoney();
     
     let cars = wx.getStorageSync('cars');
@@ -131,6 +143,23 @@ Page({
     this.setData({
       cars: cars
     })
+=======
+		let cars = wx.getStorageSync('cars');
+		console.log(cars)
+		if(cars.length === 0){
+			this.setData({
+				hasGoods:false
+			})
+			console.log(this.data.hasGoods)
+			return;
+		}
+		this.setData({
+			cars: cars,
+			hasGoods: true
+		})
+		console.log(this.data.hasGoods)
+		this.changeMoney()
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
   },
 
   /**

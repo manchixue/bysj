@@ -1,6 +1,7 @@
 <!--pages/shopcar/shopcar.wxml-->
 <view class='view-body'>
 
+<<<<<<< HEAD
 
 	<view class='container'>
   <!--空购物车  -->
@@ -8,6 +9,14 @@
 
     </view>
 		<checkbox-group bindchange='selectedItemGoods' wx:show = '{{isShow}}'>
+=======
+	<view hidden='{{hasGoods}}' class='no-goods'>
+			<text>购物车暂无东西~</text>
+		</view>
+	<view class='container' show='{{hasGoods}}'>
+		
+		<checkbox-group bindchange='selectedItemGoods'>
+>>>>>>> a0fc79d81a934e142f558f9c5668271dc331b604
 			<block wx:for='{{cars}}'>
 				<view class='view-car-item'>
 					<view class='view-car-item1'>
