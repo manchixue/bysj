@@ -10,7 +10,8 @@ Page({
 		counts:0,
 		x0:null,
 		x:null,
-		flag:false
+		flag:false,
+		hasGoods:false
   },
 	delete(e){
 		// this.
@@ -24,6 +25,12 @@ Page({
 				wx.setStorageSync('cars', self.data.cars)
 			}
 		})
+		if(this.data.cars.length === 0){
+			this.setData({
+				hasGoods:false
+			})
+		}
+		this.changeMoney();
 	},
 	selectedAllGoods:function(e){
 		if (e.detail.value.length>0){
@@ -105,18 +112,28 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-		let cars = wx.getStorageSync('cars');
-		this.setData({
-			cars:cars
-		})
-		this.changeMoney()
+		
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-		this.changeMoney();
+		let cars = wx.getStorageSync('cars');
+		console.log(cars)
+		if(cars.length === 0){
+			this.setData({
+				hasGoods:false
+			})
+			console.log(this.data.hasGoods)
+			return;
+		}
+		this.setData({
+			cars: cars,
+			hasGoods: true
+		})
+		console.log(this.data.hasGoods)
+		this.changeMoney()
   },
 
   /**
